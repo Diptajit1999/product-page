@@ -1,0 +1,87 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Set a light background color */
+}
+
+.container {
+    max-width: 800px; /* Limit container width for better readability */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure container takes full height of viewport */
+}
+
+.product-detail {
+    background-color: #ffffff; /* White background for the product details */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    padding: 30px; /* Add padding for spacing */
+    width: 100%; /* Ensure product detail takes full width of container */
+}
+
+.product-detail h1 {
+    font-size: 24px; /* Larger font size for product name */
+    margin-bottom: 15px; /* Add spacing below the product name */
+    text-align: center; /* Center align product name */
+}
+
+.product-detail p {
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+    text-align: center; /* Center align paragraphs */
+}
+
+.product-detail img {
+    max-width: 100%; /* Make images responsive */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to images */
+    display: block; /* Ensure images are centered horizontally */
+    margin: 0 auto; /* Center images horizontally */
+}
+
+.product-images {
+    margin-top: 20px; /* Add spacing above the product images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px; /* Adjust carousel control icon size */
+    height: 30px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for carousel controls */
+    border-radius: 50%; /* Make carousel controls circular */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Adjust container padding for smaller screens */
+    }
+
+    .product-detail {
+        padding: 20px; /* Adjust product detail padding for smaller screens */
+    }
+
+    .product-detail h1 {
+        font-size: 20px; /* Decrease font size for product name on smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-detail h1 {
+        font-size: 18px; /* Further decrease font size for product name on even smaller screens */
+    }
+}
